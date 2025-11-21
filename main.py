@@ -21,7 +21,6 @@ def load_kube_config_once():
     except Exception as e:
         raise Exception(f"Failed to load kubernetes config from ~/.kube/config. Error: {e}")
 
-# Load config and create clients once at module level
 load_kube_config_once()
 v1 = client.CoreV1Api() # Core V1 API client to deal with (pods, services, nodes, namespaces, etc.)
 apps_v1 = client.AppsV1Api() # Apps V1 API client to deal with (deployments, statefulsets, etc.)
