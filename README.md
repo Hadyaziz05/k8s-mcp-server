@@ -32,13 +32,6 @@ docker run -it --rm \
   k8s-mcp-server
 ```
 
-Or use the published image:
-```bash
-docker run -it --rm \
-  -v ~/.kube:/home/mcpuser/.kube:ro \
-  <your-docker-username>/kubectl-mcp-server:latest
-```
-
 ## Integration with GitHub Copilot in VS Code
 
 You can integrate this MCP server with GitHub Copilot in Visual Studio Code to interact with your Kubernetes cluster through natural language.
